@@ -1,15 +1,8 @@
 ﻿// JavaScript source code
-const a="😃👱💝";
-//emoticon is text//
-console.log(a);
 
-const b=true;
-console.log(b);//boolean
+const b="seoHyun";
+const array=["😃","👱","💝",34,true,33.5,b];
 
-const c=3;
-console.log(c);//number variable
+console.log(array);
 
-
-const d=44.5;
-//float variable
-console.log(d);
+console.log(array[1]);
