@@ -1,10 +1,15 @@
-// JavaScript source code
-let c=215;
-let d=c+4;
- c=4;
-console.log(c,d);
+﻿// JavaScript source code
+const a="😃👱💝";
+//emoticon is text//
+console.log(a);
 
-const a=215;
-const b=a+4;
-//constant variable cannot changed
-console.log(b,a);
+const b=true;
+console.log(b);//boolean
+
+const c=3;
+console.log(c);//number variable
+
+
+const d=44.5;
+//float variable
+console.log(d);
