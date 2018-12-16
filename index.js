@@ -1,22 +1,32 @@
 ﻿// JavaScript source code
 
 function monday(time,task){
-console.log("Monday "+time+" we have to "+task)
+return("Monday "+time+" we have to "+task)
+
 };
+
+const onMonday = monday("8:00","go work");
+console.log(onMonday);
 
 monday("8:00","go work");
 
 
 
-function tuesday(time,something){
-console.log("Tuesday ",time," i enjoy ",something)
-};
+const calculator={
+plus:function(a,b){return a+b;},
+minus:function(a,b){return a-b},
+divide:function(a,b){return a/b},
+multiple:function(a,b){return a*b}
+}
 
-tuesday("20:00","drama");
+const plusSample = calculator.plus(4,5);
+console.log(plusSample);
 
+const minusSample =calculator.minus(12,7);
+console.log(minusSample);
 
-function wednesday(time,meal){
-console.log(`Wednesday ${time} i eat ${meal}`)
-};
+const divideSample =calculator.divide(20,2);
+console.log(divideSample);
 
-wednesday("18:00","rice noodle")
+const multipleSample = calculator.multiple(3,4);
+console.log(multipleSample);
