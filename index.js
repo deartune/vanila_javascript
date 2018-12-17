@@ -2,40 +2,27 @@
 
 
 
-const changeTitle = document.querySelector('#title')
-changeTitle.innerHTML="Js"
-changeTitle.style.color="blue";
-document.title="vanila_javascript"
-//console.log(changeTitle.style);
+const title = document.querySelector('#title');
+const baseColor = "red";
+const blueColor = "blue";
 
-/*
-window.addEventListener("resize",handleResize)
-function handleResize(){
-    console.log("Your browser resized")
-}
-*/
+function handleClick() {
+    const currentColor = title.style.color;
 
+    if (currentColor == baseColor) {
+        title.style.color = blueColor;
+        console.log("blue");
+    } else {
+        title.style.color = baseColor;
+        console.log("base");
+    }
 
-window.addEventListener("resize",eventReport)
-function eventReport(event){
-    console.log(event)
-}
-window.addEventListener("resize",eventReport)
-
-
-changeTitle.addEventListener("click",clickEvent)
-function clickEvent(){
-    changeTitle.style.color="red";
-    
 }
 
-const age =prompt("How old are you?")
 
-if(age<20){
-    console.log("You are teenager")
+function changeColor() {
+    title.style.color = baseColor;
+    title.addEventListener("click", handleClick);
 }
-else if(20<=age && age<30){
-    console.log("You have beautiful skin")
-}else{
-    console.log("i recommend some exercise like swimming")
-}
+
+changeColor();
