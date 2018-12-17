@@ -26,3 +26,15 @@ function changeColor() {
 }
 
 changeColor();
+
+
+
+
+function handleOnline(){
+    console.log("Online congratulrations!")
+}
+function handleOffline(){
+    console.log("Good Bye!")
+}
+window.addEventListener("online",handleOnline);
+window.addEventListener("offline",handleOffline);
