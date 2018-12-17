@@ -4,3 +4,17 @@ background-color:purple;
 
 }
 
+h1
+{
+    color:wheat;
+    transition:color.5s ease-in-out;
+
+}
+
+.clicked
+{
+    color:blue;
+}
+
+.btn
+{cursor: pointer;}
